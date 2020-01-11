@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:weightSum="2"
+                  android:orientation="horizontal"
+                  android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:background="#fff"
+                      android:layout_height="match_parent">
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:background="#002E2A"
+                      android:layout_height="match_parent">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:weightSum="2"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:background="@drawable/corner_side_green"
+                      android:layout_height="match_parent">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:background="@drawable/miring3"
+                            android:alpha="0.1"
+                            android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:background="@drawable/corner_side_white"
+                      android:layout_height="match_parent">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:background="@drawable/miring4"
+                            android:alpha="0.3"
+                            android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView android:layout_width="220dp"
+               android:id="@+id/image"
+               android:background="@drawable/cup_starbucks"
+               android:layout_centerInParent="true"
+               android:layout_height="300dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="20sp"
+              android:id="@+id/dash"
+              android:text="GET YOUR"
+              android:fontFamily="@font/mmedium"
+              android:alpha="0.8"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#fff"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="30sp"
+              android:id="@+id/dash2"
+              android:layout_below="@+id/dash"
+              android:fontFamily="@font/mmedium"
+              android:text="CAFFE LATTE"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:textColor="#fff"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="20sp"
+              android:id="@+id/dash3"
+              android:layout_below="@id/dash2"
+              android:text="Price"
+              android:fontFamily="@font/mmedium"
+              android:alpha="0.8"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:textColor="#fff"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="30sp"
+              android:layout_below="@+id/dash3"
+              android:fontFamily="@font/mmedium"
+              android:text="Rp 45.000"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:textColor="#fff"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:id="@+id/desc"
+              android:layout_below="@+id/image"
+              android:fontFamily="@font/mmedium"
+              android:text="Description"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/hijau_starbucks"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="18sp"
+              android:layout_below="@+id/desc"
+              android:id="@+id/desc2"
+              android:fontFamily="@font/mmedium"
+              android:text="Starbuck Chilled Classics Caffe Latte coffee dring in 220ml cup whit a straw"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/hijau_starbucks"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:id="@+id/info"
+              android:layout_below="@+id/desc2"
+              android:fontFamily="@font/mmedium"
+              android:text="Product information"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/hijau_starbucks"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textSize="18sp"
+              android:layout_below="@+id/info"
+              android:fontFamily="@font/mmedium"
+              android:text="3.1% fat milk(75%), Starbucks Arabica coffee"
+              android:alpha="0.8"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+              android:textColor="@color/hijau_starbucks"
+              android:layout_height="wrap_content"/>
+
+</RelativeLayout>

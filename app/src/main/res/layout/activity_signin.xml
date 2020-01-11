@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:weightSum="3"
+        android:orientation="vertical"
+        tools:context=".SignIn">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:id="@+id/linearLay"
+                      android:orientation="vertical"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:background="@drawable/gradient_all"
+                      android:layout_height="match_parent">
+
+            <ImageView android:layout_width="140dp"
+                       android:background="@drawable/logostar2"
+                       android:layout_height="140dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:background="@drawable/miring3"
+                      android:padding="15dp"
+                      android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/txt_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign In!"
+                    android:fontFamily="@font/mmedium"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="#000"
+                    />
+            <TextView
+                    android:id="@+id/txtanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anda Harus Masuk dahulu"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"
+                    android:textSize="12dp"/>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_e-mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:focusableInTouchMode="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="e-mail"
+                        android:fontFamily="@font/mmedium"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:inputType="textEmailAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginHorizontal="15dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_pasword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Password"
+                        android:fontFamily="@font/mmedium"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:inputType="textPassword">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                    android:id="@+id/btn_signIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Masuk"
+                    android:fontFamily="@font/mmedium"
+                    android:textSize="18sp"
+                    android:background="@drawable/bg_button"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+            <TextView
+                    android:id="@+id/goDaftar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Akun Baru"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/mmedium"
+                    android:textColor="#000"
+                    android:layout_marginTop="17dp"/>
+
+        </LinearLayout>
+
+</LinearLayout>
